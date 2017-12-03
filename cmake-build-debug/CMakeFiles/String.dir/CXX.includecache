@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/athena/C++/String/String.h
+string.h
+-
+iostream
+-
+
+/Users/athena/C++/String/main.cpp
+iostream
+-
+string
+-
+String.h
+/Users/athena/C++/String/String.h
+
