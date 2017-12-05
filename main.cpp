@@ -64,5 +64,27 @@ int main() {
     str12.append(str4, 1, 2);
     cout << str12 << endl;
 
+    string str13("hi! ");
+    str13.assign(str12);
+    cout << str13 << endl;
+    str12 = "qwer!";
+    cout << str12 << endl;
+    cout << str13 << endl;
+
+    str11.assign(str10);
+    str11.print();
+
+    String str14("hello");
+    cout << str14.at(4) << endl;
+
+    string str15("hello world.");
+    str15.back() = '!';
+    cout << str15 << endl;
+
+    String str16("hello world.");
+    str16.back() = '!';
+    str16.print();
+
+
     return 0;
 }
