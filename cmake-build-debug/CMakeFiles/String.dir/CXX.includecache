@@ -11,6 +11,10 @@ string.h
 -
 iostream
 -
+iterator
+-
+vector
+-
 
 /Users/athena/C++/String/main.cpp
 iostream
@@ -19,4 +23,6 @@ string
 -
 String.h
 /Users/athena/C++/String/String.h
+iterator
+-
 

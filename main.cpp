@@ -1,8 +1,10 @@
 #include <iostream>
 #include <string>
 #include "String.h"
+#include <iterator>
 
 using namespace std;
+using namespace RYX;
 
 int main() {
 
@@ -74,8 +76,9 @@ int main() {
     str11.assign(str10);
     str11.print();
 
-    String str14("hello");
+    String str14("hello world!");
     cout << str14.at(4) << endl;
+    str14.print();
 
     string str15("hello world.");
     str15.back() = '!';
@@ -84,6 +87,20 @@ int main() {
     String str16("hello world.");
     str16.back() = '!';
     str16.print();
+
+    int tag1 = str16.compare(str14);
+    int tag2 = str16.compare(0, 4, str11);
+    int tag3 = str16.compare(0, 4, str11, 0, 4);
+    int tag4 = str16.compare("hello world!");
+    int tag5 = str16.compare(0, 4, "hell");
+    int tag6 = str16.compare(0, 4, "hello world.", 4);
+    cout << tag1 << tag2 << tag3 << tag4 << tag5 << tag6 << endl;
+
+    char buffer[20];
+    String str17("Test string...");
+    int length =  str17.copy(buffer, 6, 5);
+    buffer[length] = '\0';
+    cout << buffer << endl;
 
 
     return 0;
